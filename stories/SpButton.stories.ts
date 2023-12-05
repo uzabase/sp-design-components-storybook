@@ -3,15 +3,25 @@ import "@sp-design/components-web-components";
 export default {
   title: "sp-button",
   tags: ['autodocs'],
+  render(params) {
+    const el = document.createElement("sp-button");
+    el.setAttribute("label", params.label ?? "Button");
+    el.setAttribute("label", params.label ?? "Button");
+    return el;
+  },
   argTypes: {
     label: { type: "string" },
-    color: {
+    type: {
       control: { type: "select" },
-      options: ["primary", "secondary", "active"]
+      options: ["default", "destructive"],
+    },
+    appearance: {
+      control: { type: "select" },
+      options: ["outline", "fill", "text"],
     },
     size: {
       control: { type: "select" },
-      options: ["small", "medium", "large"]
+      options: ["medium", "large", "xLarge", "width160", "width80"],
     }
   },
 }

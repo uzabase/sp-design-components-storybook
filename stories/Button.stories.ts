@@ -1,6 +1,6 @@
 import { Meta } from "@storybook/html";
 // @ts-ignore
-import html from "./Button.html?inline";
+import html from "./Button.html?raw";
 
 type Args = {
   label: string;
@@ -36,9 +36,13 @@ const meta: Meta<Args> = {
 export default meta;
 
 export const Primary = {
-  color: "primary",
+  args: {
+    color: "primary",
+  }
 };
 
 export const Secondary = {
-  color: "secondary",
+  args: {
+    color: "secondary",
+  }
 };
