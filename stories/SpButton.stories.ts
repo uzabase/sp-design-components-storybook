@@ -6,7 +6,10 @@ export default {
   render(params) {
     const el = document.createElement("sp-button");
     el.setAttribute("label", params.label ?? "Button");
-    el.setAttribute("label", params.label ?? "Button");
+    params.type && el.setAttribute("type", params.type);
+    params.appearance && el.setAttribute("appearance", params.appearance);
+    params.size && el.setAttribute("size", params.size);
+    params.disabled && el.setAttribute("disabled", params.disabled);
     return el;
   },
   argTypes: {
@@ -22,22 +25,28 @@ export default {
     size: {
       control: { type: "select" },
       options: ["medium", "large", "xLarge", "width160", "width80"],
-    }
+    },
+    disabled: { type: "boolean" }
   },
 }
 
-export const Default = () => {
-  return `<sp-button label="hoge" appearance="fill" disabled></sp-button>`
+export const Default = {
 }
 
-export const FilledButton = () => {
-  return `<sp-button label="hoge" appearance="fill"></sp-button>`
+export const FilledButton = {
+  args: {
+    appearance: "fill",
+  }
 }
 
-export const OutlinedButton = () => {
-  return `<sp-button label="hoge" appearance="outline"></sp-button>`
+export const OutlinedButton = {
+  args: {
+    appearance: "outline",
+  }
 }
 
-export const DisabledButton = () => {
-  return `<sp-button label="hoge" disabled></sp-button>`
+export const DisabledButton = {
+  args: {
+    disabled: true,
+  }
 }
