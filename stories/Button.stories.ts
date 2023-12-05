@@ -1,6 +1,6 @@
-import { Meta, StoryObj } from "@storybook/html";
+import { Meta } from "@storybook/html";
 // @ts-ignore
-import html from "./Button.html?raw";
+import html from "./Button.html?inline";
 
 type Args = {
   label: string;
