@@ -1,0 +1,24 @@
+{
+  "name": "sp-ui-component-storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.5",
+    "@storybook/addon-essentials": "^7.6.2",
+    "@storybook/addon-interactions": "^7.6.2",
+    "@storybook/addon-links": "^7.6.2",
+    "@storybook/blocks": "^7.6.2",
+    "@storybook/html": "^7.6.2",
+    "@storybook/html-vite": "^7.6.2",
+    "storybook": "^7.6.2",
+    "typescript": "^5.3.2",
+    "@sp-design/components-web-components": "git+https://github.com/uzabase/sp-design-components-web-components.git#main"
+  }
+}
