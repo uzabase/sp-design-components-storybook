@@ -1,4 +1,4 @@
-import "@sp-design/components-web-components";
+// import "@sp-design/components-web-components";
 
 export default {
   title: "SpButton",
