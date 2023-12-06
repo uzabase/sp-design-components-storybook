@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.23.5",
-    "@sp-design/components-web-components": "git+https://github.com/uzabase/sp-design-components-web-components.git#feature/storybook",
+    "@sp-design/components-web-components": "git+https://github.com/uzabase/sp-design-components-web-components.git#semver:^0.0.6",
     "@sp-design/token": "git+https://github.com/uzabase/sp-design-token.git#semver:^4.2.2",
     "@storybook/addon-essentials": "^7.6.2",
     "@storybook/addon-interactions": "^7.6.2",

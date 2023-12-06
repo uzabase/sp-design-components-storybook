@@ -18,23 +18,23 @@ const config = {
   docs: {
     autodocs: "tag",
   },
-  viteFinal: (config) => {
-    return mergeConfig(config, {
-      plugins: [
-        babel({
-          babelConfig: {
-            babelrc: false,
-            configFile: false,
-            plugins: [
-              [
-                "@babel/plugin-proposal-decorators",
-                { loose: true, version: "2022-03" },
-              ],
-            ],
-          },
-        }),
-      ],
-    });
-  },
+  // viteFinal: (config) => {
+  //   return mergeConfig(config, {
+  //     plugins: [
+  //       babel({
+  //         babelConfig: {
+  //           babelrc: false,
+  //           configFile: false,
+  //           plugins: [
+  //             [
+  //               "@babel/plugin-proposal-decorators",
+  //               { loose: true, version: "2022-03" },
+  //             ],
+  //           ],
+  //         },
+  //       }),
+  //     ],
+  //   });
+  // },
 };
 export default config;
