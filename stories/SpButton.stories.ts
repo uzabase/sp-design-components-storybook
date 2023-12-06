@@ -1,5 +1,5 @@
-import "@sp-design/components-web-components";
 import "@sp-design/token/styles/speeda-tokens.css";
+import "@sp-design/components-web-components";
 
 export default {
   title: "sp-button",
