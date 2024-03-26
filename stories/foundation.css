@@ -1,0 +1,9 @@
+:where(body) {
+  font-family: var(--font-ja);
+  line-height: 1.6;
+}
+
+:where(body):lang(zh) {
+  font-family: var(--font-zh);
+  line-height: 1.6;
+}

@@ -1,0 +1,20 @@
+
+.button {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 100%;
+    word-break: break-word;
+    border: 1px solid transparent;
+    background-color: transparent;
+    min-height: 28px;
+    padding-inline: 16px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: black;
+    background-color: rebeccapurple;
+}
