@@ -77,7 +77,6 @@ const meta: Meta<Args> = {
 		disabled: { type: "boolean" },
 	},
 	args: {
-
 		disabled: false,
 	},
 };

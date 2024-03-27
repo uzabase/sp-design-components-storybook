@@ -61,7 +61,6 @@ const meta: Meta<Args> = {
 	},
 	argTypes: {
 		disabled: { type: "boolean" },
-
 	},
 	args: {
 		disabled: false,
@@ -74,4 +73,3 @@ export const Default = {
 		disabled: false,
 	},
 };
-
