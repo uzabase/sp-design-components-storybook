@@ -2,6 +2,7 @@
     display: inline-flex;
     min-width: 24px;
 }
+
 .spdsRadio__radiomark{
     position: relative;
 }
@@ -29,6 +30,16 @@
     background: var(--color-semantic-surface-regular-1) 50% 50% no-repeat;
     border: 1px solid var(--color-semantic-border-check-unchecked);
     border-radius: 50%;
+}
+.spdsRadio:hover .spdsRadio__radiomark:before{
+    background-color: var(--color-semantic-surface-regular-3) ;
+}
+.spdsRadio__radiomark:focus:before{
+    border-color: var(--color-semantic-border-focus);
+    box-shadow: 0px 0px 0px 3px var(--color-semantic-highlight-focus-ring-default);
+}
+.spdsRadio__radiomark:focus-visible:before{
+    outline: inherit;
 }
 .spdsRadio__radiomark:has(.input:checked)::before {
     background-color: var(--color-semantic-surface-regular-1);

@@ -17,34 +17,34 @@ const meta: Meta<Args> = {
                 <div class="spdsDropdown">
                 	<button class="spdsDropdown__selected" ${disabled} onclick="{
 
-// document.addEventListener('click', function(event) {
-//     // どっかをクリックしたらspdsDropdown__menuはすべて閉じる 
-// 	const allspdsDropdownMenuElements = document.querySelectorAll('.spdsDropdown__menu');
-//     if(allspdsDropdownMenuElements.length){
-//             Array.from( allspdsDropdownMenuElements ).map((x) => x.classList.remove('-show'));
-//      }
-//     // クリックされた要素を取得
-//   	const target = event.target;
-//   	// トリガーをクリックしたらmenuを表示
-// 	if (target.classList.contains('spdsDropdown__selected')) {
-// 		const siblings = target.nextElementSibling;
-// 		siblings.classList.add('-show');
-//         const menuWidth = parseInt(getComputedStyle(siblings).width) +30;
-//         siblings.style.width = menuWidth + 'px';
-//       
-// 		//for使うならmap使ったほうがナウイよ
-// 		//Array.from( siblings ).map((x) => x.classList.add('-show'));
-// 	}
-//     //menuを選択したらmenu自体消す、選択したmemuのテキストを渡す
-//   	if (target.classList.contains('spdsDropdown__item')) {
-//          const selectedText = target.innerText;
-//          const selected = target.closest('.spdsDropdown__menu').previousElementSibling;
-//          selected.innerText = selectedText;
-// 		const parents = target.closest('.spdsDropdown__menu');
-// 		parents.classList.remove('-show');
-//   	}
-//
-// });
+document.addEventListener('click', function(event) {
+    // どっかをクリックしたらspdsDropdown__menuはすべて閉じる 
+	const allspdsDropdownMenuElements = document.querySelectorAll('.spdsDropdown__menu');
+    if(allspdsDropdownMenuElements.length){
+            Array.from( allspdsDropdownMenuElements ).map((x) => x.classList.remove('-show'));
+     }
+    // クリックされた要素を取得
+  	const target = event.target;
+  	// トリガーをクリックしたらmenuを表示
+	if (target.classList.contains('spdsDropdown__selected')) {
+		const siblings = target.nextElementSibling;
+		siblings.classList.add('-show');
+        // const menuWidth = parseInt(getComputedStyle(siblings).width) +30;
+        // siblings.style.width = menuWidth + 'px';
+      
+		//for使うならmap使ったほうがナウイよ
+		//Array.from( siblings ).map((x) => x.classList.add('-show'));
+	}
+    //menuを選択したらmenu自体消す、選択したmemuのテキストを渡す
+  	if (target.classList.contains('spdsDropdown__item')) {
+         const selectedText = target.innerText;
+         const selected = target.closest('.spdsDropdown__menu').previousElementSibling;
+         selected.innerText = selectedText;
+		const parents = target.closest('.spdsDropdown__menu');
+		parents.classList.remove('-show');
+  	}
+
+});
   }">選んでちょ</button>
 					<div class="spdsDropdown__menu">
 					<ul class="spdsDropdown__menuInner">
