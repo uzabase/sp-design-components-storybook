@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+.spdsDropdownAction {
+    position: relative;
+}
+.spdsDropdownAction__selected {
+    font-size: 10px;
+    padding: 5px 16px;
+    color: var(--color-semantic-text-body-regular);
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid var(--color-semantic-border-button-outline-default);
+    background-color: transparent;
+    line-height: 100%;
+    box-sizing: border-box;
+    min-height: 28px;
+    min-width: 28px;
+    width: auto;
+    word-break: break-word;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    grid-column-gap: 4px;
+}
+.spdsDropdownAction__selected:after {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2216%22%20height%3D%2217%22%20viewBox%3D%220%200%2016%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8.00033%2011.8266L2.66699%206.49329L3.37366%205.78662L8.00033%2010.4133L12.627%205.78662L13.3337%206.49329L8.00033%2011.8266Z%22%20fill%3D%22%23191919%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    content: "";
+    display: inline-block;
+}
+.spdsDropdownAction__selected:focus-visible{
+    border: 1px solid var(--color-semantic-border-focus);
+    background-color: var(--color-semantic-surface-selected);
+    outline: none;
+    color: var(--color-semantic-text-button-fill-focus);
+    &:hover{
+        border: 1px solid var(--color-semantic-border-selected-hover);
+        background-color: var(--color-semantic-surface-selected-hover);
+    }
+
+}
+.spdsDropdownAction__selected:focus-within{
+    border: 1px solid var(--color-semantic-border-focus);
+    background-color: var(--color-semantic-surface-selected);
+    outline: none;
+    color: var(--color-semantic-text-button-fill-focus);
+    &:hover{
+        border: 1px solid var(--color-semantic-border-selected-hover);
+        background-color: var(--color-semantic-surface-selected-hover);
+    }
+}
+.spdsDropdownAction__selected:focus-within:after,
+.spdsDropdownAction__selected:focus-visible:after{
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2216%22%20height%3D%2217%22%20viewBox%3D%220%200%2016%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8.00033%2011.8266L2.66699%206.49329L3.37366%205.78662L8.00033%2010.4133L12.627%205.78662L13.3337%206.49329L8.00033%2011.8266Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+}
+.spdsDropdownAction__menu {
+    z-index: 40000;
+    position: absolute;
+    left: 0;
+    margin-block-start: 8px;
+    padding-block: 8px;
+    background-color: var(--color-semantic-surface-regular-1);
+    border: 1px solid var(--color-semantic-border-regular);
+    border-radius: 5px;
+    box-shadow: 0 3px 12px 0 rgba(25, 25, 25, 0.2);
+    visibility: hidden;
+}
+.spdsDropdownAction__item {
+    width: 100%;
+    padding-block: 7px;
+    padding-inline: 8px;
+    background: none;
+    border: 0;
+    color: var(--color-semantic-text-body-regular);
+    font-size: 12px;
+    text-align: left;
+    line-height: 1;
+    height: 26px;
+}
+.spdsDropdownAction__selected:disabled {
+    border: 1px solid var(--color-semantic-border-regular);
+    background-color: var(--color-semantic-surface-button-disabled);
+    color: var(--color-semantic-text-button-disabled);
+    cursor: not-allowed;
+}
+.spdsDropdownAction__selected:disabled:after {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2216%22%20height%3D%2217%22%20viewBox%3D%220%200%2016%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8.00033%2011.8266L2.66699%206.49329L3.37366%205.78662L8.00033%2010.4133L12.627%205.78662L13.3337%206.49329L8.00033%2011.8266Z%22%20fill%3D%22%23CBCBCB%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+}
+.spdsDropdownAction__menu.-show{
+    visibility: visible;
+}
+.spdsDropdownAction__item:hover {
+    background-color: var(--color-semantic-surface-regular-3);
+}
+/*.spdsDropdown__item:focus,*/
+.spdsDropdownAction__item:focus-visible,
+.spdsDropdownAction__item:focus-within {
+    outline:none;
+    background-color: var(--color-semantic-surface-regular-3);
+    outline-width: 0;
+    box-shadow: none;
+}

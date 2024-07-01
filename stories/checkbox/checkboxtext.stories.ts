@@ -2,6 +2,8 @@ import { Meta } from "@storybook/html";
 import "@sp-design/token/lib/speeda-tokens.css";
 import "./checkboxtext.css";
 
+import hoge from '../button/button.stories';
+
 type Args = {
 	label: string;
 	disabled: false;
@@ -38,7 +40,6 @@ const meta: Meta<Args> = {
 		label.appendChild(checktext);
 		wrapper.appendChild(label);
 
-		//return labelElement;
 		return wrapper;
 	},
 	argTypes: {
@@ -57,4 +58,7 @@ export const Default = {
 	args: {
 		disabled: false,
 	},
+};
+export const Hoge = () => {
+	return hoge;
 };

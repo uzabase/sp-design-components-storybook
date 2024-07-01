@@ -4,9 +4,9 @@ import "./button.css";
 
 type Args = {
 	label: string;
-	size: "medium" | "large" | "xLarge" | "width160" | "width80";
-	appearance: "outline" | "fill" | "text";
-	type: "default" | "destructive";
+	size: "Medium" | "Large" | "XLarge" | "Width160" | "Width80";
+	appearance: "Outline" | "Fill" | "Text";
+	type: "Default" | "Destructive";
 	disabled: false;
 };
 
@@ -14,36 +14,36 @@ const meta: Meta<Args> = {
 	title: "button/button",
 	tags: ["autodocs"],
 	render: (args) => {
-		const size = "size__" + args.size ?? "size__medium";
+		const size = "-size" + args.size ?? "-sizeMedium";
 		const appearance =
-			"appearance__" + args.appearance ?? "appearance__outline";
-		const type = "type__" + args.type ?? "type__default";
+			"-appearance" + args.appearance ?? "-appearanceOutline";
+		const type = "-type" + args.type ?? "-typeDefault";
 		const disabled = args.disabled ? "disabled" : "";
 		const label = args.label ?? "Button";
 		return `
-        <button ${disabled} class="base ${size} ${appearance} ${type}"><span>${label}</span></button>
+        <button ${disabled} class="spdsButton ${size} ${appearance} ${type}"><span>${label}</span></button>
     `;
 	},
 	argTypes: {
 		label: { type: "string" },
 		size: {
 			control: { type: "select" },
-			options: ["medium", "large", "xLarge", "width160", "width80"],
+			options: ["Medium", "Large", "XLarge", "Width160", "Width80"],
 		},
 		appearance: {
 			control: { type: "select" },
-			options: ["outline", "fill", "text"],
+			options: ["Outline", "Fill", "Text"],
 		},
 		type: {
 			control: { type: "select" },
-			options: ["default", "destructive"],
+			options: ["Default", "Destructive"],
 		},
 		disabled: { type: "boolean" },
 	},
 	args: {
-		size: "medium",
-		appearance: "fill",
-		type: "default",
+		size: "Medium",
+		appearance: "Fill",
+		type: "Default",
 		disabled: false,
 	},
 };

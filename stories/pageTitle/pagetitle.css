@@ -1,0 +1,74 @@
+.spdsPageTitle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 18px 0;
+    box-sizing: border-box;
+}
+.spdsPageTitle__details {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    grid-column-gap: 8px;
+    margin-right: 24px;
+}
+.spdsPageTitle__main {
+    color: #191919;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    grid-column-gap: 8px;
+}
+.spdsPageTitle__title{
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: bold;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+.spdsPageTitle__sub {
+    color: #7f7f7f;
+    font-size: 12px;
+    max-width: 20%;
+    display: flex;
+    align-items: flex-start;
+    grid-column-gap: 8px;
+}
+.spdsPageTitle__subTitle{
+
+}
+.spdsPageTitle__helpIcon {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.spdsPageTitle__helpIcon svg {
+    width: 18px;
+    height: 18px;
+    z-index: 2;
+}
+.spdsPageTitle__flag {
+    display: block;
+    width: 16px;
+    height: 11px;
+    min-width: 16px;
+}
+.spdsPageTitle__main .spdsPageTitle__flag {
+    margin-top: 8px;
+}
+
+.spdsPageTitle__sub .spdsPageTitle__flag {
+    margin-top: 3px;
+}
+.spdsPageTitle__actions {
+    display: flex;
+    grid-column-gap: 8px;
+}
+.spdsPageTitle__actionsItem {
+    position: relative;
+}

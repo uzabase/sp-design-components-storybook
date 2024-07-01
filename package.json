@@ -16,7 +16,8 @@
     "@material/web": "^1.3.0",
     "@sp-design/token": "git+https://github.com/uzabase/sp-design-token.git#semver:^6.0.0",
     "@storybook/test": "^8.0.0",
-    "@ub-design/components-web-components": "git+https://github.com/uzabase/ub-design-components-web-components.git#semver:^0.0.9"
+    "@ub-design/components-web-components": "git+https://github.com/uzabase/ub-design-components-web-components.git#semver:^0.0.9",
+    "@sp-design/icon": "git+https://github.com/uzabase/sp-design-icon.git#semver:^0.1.2"
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
