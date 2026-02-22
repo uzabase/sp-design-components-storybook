@@ -25,7 +25,7 @@
     "@storybook/addon-links": "^7.6.16",
     "@storybook/blocks": "^7.6.16",
     "@storybook/html-vite": "^7.6.16",
-    "storybook": "^7.6.16",
+    "storybook": "^7.6.21",
     "typescript": "^5.3.3"
   }
 }
